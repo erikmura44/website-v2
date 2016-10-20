@@ -35,8 +35,8 @@ if (!$errors) {
 
 	//if POST was used, display the message straight away
 	if ($_POST) {
-		if ($result) echo 'Thank you! We have received your message.';
-		else echo 'Sorry, unexpected error. Please try again later';
+		if ($result) echo 'Thank you! We have received your message. <a href="index.html">Back</a>';
+		else echo 'Sorry, unexpected error. Please try again later <a href="index.html">Back</a>';
 
 	//else if GET was used, return the boolean value so that
 	//ajax script can react accordingly
